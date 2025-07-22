@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShadowClient - Minecraft Enhancer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0f2c, #040d1a);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .neon {
+      color: #00f0ff;
+      text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .description {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+      gap: 20px;
+    }
+
+    .screenshots img {
+      width: 300px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    .features {
+      text-align: center;
+      margin: 40px 20px;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    .features li::before {
+      content: "✔️ ";
+      color: #00f0ff;
+    }
+
+    .download {
+      display: flex;
+      justify-content: center;
+      margin: 50px;
+    }
+
+    .download button {
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #00f0ff;
+      color: #000;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00f0ff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .download button:hover {
+      background-color: #0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="neon">ShadowClient</h1>
+    <p class="description">ShadowClient is the most advanced Minecraft client modification designed for performance, PvP domination, and visual clarity. With unmatched features and a sleek design, it's your ultimate competitive edge.</p>
+  </header>
+
+  <div class="screenshots">
+    <div>
+      <img src="https://i.imgur.com/jwHCb3O.png" alt="Main UI">
+      <div class="caption">Main UI</div>
+    </div>
+    <div>
+      <img src="https://i.imgur.com/H9Z4PLv.png" alt="Settings">
+      <div class="caption">Settings Panel</div>
+    </div>
+    <div>
+      <img src="https://i.imgur.com/R6lKcWj.png" alt="Combat">
+      <div class="caption">Combat Mode</div>
+    </div>
+  </div>
+
+  <section class="features">
+    <h2 class="neon">Features</h2>
+    <ul>
+      <li>FPS Boost & Custom Optimization</li>
+      <li>Built-in Aim Assist & AutoClicker</li>
+      <li>Stealth Mode & Stream Proof</li>
+      <li>Modular Add-ons & Scripts</li>
+      <li>Fully Skinnable Interface</li>
+    </ul>
+  </section>
+
+  <div class="download">
+    <button onclick="alert('You are an idiot 😂 — Gotcha by ShadowClient!')">Download ShadowClient</button>
+  </div>
+
+  <footer>
+    <p>This site is for educational or demo purposes. ShadowClient is not affiliated with Mojang or Microsoft. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Replace this with your Discord webhook URL
+    const webhookUrl = "PASTE_YOUR_DISCORD_WEBHOOK_HERE";
+
+    // Example of where you could add tracking/analytics (MUST get consent!)
+    // fetch(webhookUrl, { method: 'POST', body: JSON.stringify({ message: "Someone visited" }) });
+  </script>
+</body>
+</html>
